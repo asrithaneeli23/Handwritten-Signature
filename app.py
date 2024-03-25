@@ -32,20 +32,14 @@ def add_bg_from_local(image_file):
         """,
         unsafe_allow_html=True
     )
-contnt = "<p>Herbal medicines are preferred in both developing and developed countries as an alternative to " \
-         "synthetic drugs mainly because of no side effects. Recognition of these plants by human sight will be " \
-         "tedious, time-consuming, and inaccurate.</p> " \
-         "<p>Applications of image processing and computer vision " \
-         "techniques for the identification of the medicinal plants are very crucial as many of them are under " \
-         "extinction as per the IUCN records. Hence, the digitization of useful medicinal plants is crucial " \
-         "for the conservation of biodiversity.</p>"
+contnt = "<p>A handwritten signature verification App trained on the Handwritten Signature Datasets in Kaggle with ResNet50.</p> " 
+         
 
 if __name__ == '__main__':
     add_bg_from_local("Background.jpg")
-    new_title = '<p style="font-family:sans-serif; color:red; font-size: 50px;">Medicinal Leaf Classification</p>'
+    new_title = '<p style="font-family:sans-serif; color:red; font-size: 50px;">Handwritten Signature Verification App</p>'
     st.markdown(new_title, unsafe_allow_html=True)
-    contnt = '<p style="font-family:sans-serif; color:white; font-size: 20px;">Herbal medicines are preferred in both developing and developed countries as an alternative to synthetic drugs mainly because of no side effects \
-    Recognition of these plants by human sight will be tedious, time-consuming, and inaccurate.</p>'
+    contnt = '<p style="font-family:sans-serif; color:white; font-size: 20px;">A signature is very important for presenting a person's acceptance. So there are many chances to make it forged. To avoid this introducing a free trail,</p>'
     st.markdown(contnt,unsafe_allow_html=True)
     uploaded_file = st.file_uploader("Choose a file")
 
